@@ -12,9 +12,20 @@ A basic PID Longitudinal Controller for ROS2 Foxy and SVL Simulator.
 
 To deploy this project run 
 ```bash
-  ros2 run longitudinal_controller controller
+  ros2 launch longitudinal_controller Controller.launch.py
 ```
+## Parameters
 
+
+| Parameter | Type     | 
+| :-------- | :------- | 
+| `target_velocity` | `float` |
+| `kp` | `float` | 
+| `kd` | `float` | 
+| `ki` | `float` | 
+| `frequency` | `float` | 
+| `odometry_topic` | `string` |
+| `control_data_topic` | `string` |
 
 ## Screenshots
  
