@@ -1,0 +1,9 @@
+controller:
+  ros__parameters:
+    target_velocity: 20.0
+    kp: 0.4
+    kd: 0.3
+    ki: 0.1
+    frequency: 10.0
+    odometry_topic: "/lgsvl/vehicle_odom"
+    control_data_topic: "/lgsvl/vehicle_control_cmd"
