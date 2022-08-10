@@ -6,9 +6,6 @@
 using namespace std::chrono_literals;
 using std::placeholders::_1;
 
-/* This example creates a subclass of Node and uses std::bind() to register a
- * member function as a callback from the timer. */
-
 class Controller : public rclcpp::Node
 {
 public:
@@ -64,6 +61,7 @@ private:
       control_speed = -1.0;
     }
 
+    //Send command to vehicle
     auto message = lgsvl_msgs::msg::VehicleControlData();
     message.target_gear = 1;
     if (control_speed > 0)
